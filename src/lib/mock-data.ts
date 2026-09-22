@@ -21,6 +21,13 @@ export const students: Student[] = [
     program: "ISNE",
     courses: ["269101", "261497"],
   },
+  {
+    studentId: "670610354",
+    firstName: "เตชิต",
+    lastName: "ทั้งเจริญกุล",
+    program: "CPE",
+    courses: ["261207", "261497"],
+  }
 ];
 
 export const courses: Course[] = [
@@ -63,14 +70,14 @@ export const enrollments: Enrollment[] = [
     enrolledAt: "2026-09-13T10:05:00",
   },
   {
-    studentId: "",
+    studentId: "650610003",
     courseId: "261497",
     enrolledAt: "2026-09-15T16:45:00",
   },
 ];
 
 // นักศึกษาที่ "ล็อกอินอยู่" — ไม่มีระบบ Login/Role ในแลปนี้ จึงกำหนดไว้ที่นี่ที่เดียว
-export const CURRENT_STUDENT_ID = "650610002";
+export const CURRENT_STUDENT_ID = "670610354";
 export const currentStudent = students.find(
   (s) => s.studentId === CURRENT_STUDENT_ID,
 )!;
