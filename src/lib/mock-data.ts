@@ -28,16 +28,20 @@ export const courses: Course[] = [
     courseId: "261207",
     courseTitle: "Basic Computer Engineering Lab",
     instructors: ["Dome", "Chanadda"],
+    isEnrolled: true,
+
   },
   {
     courseId: "261497",
     courseTitle: "Full Stack Development",
     instructors: ["Dome", "Nirand", "Chanadda"],
+    isEnrolled: false,
   },
   {
     courseId: "269101",
     courseTitle: "Introduction to Information Systems and Network Engineering",
     instructors: ["KENNETH COSH"],
+    isEnrolled: false,
   },
 ];
 
@@ -59,7 +63,7 @@ export const enrollments: Enrollment[] = [
     enrolledAt: "2026-09-13T10:05:00",
   },
   {
-    studentId: "650610003",
+    studentId: "",
     courseId: "261497",
     enrolledAt: "2026-09-15T16:45:00",
   },
@@ -73,7 +77,7 @@ export const currentStudent = students.find(
 
 // ข้อมูลส่วนแสดงสถานะผู้ใช้ที่ Sidebar (ข้อ 5 ของโจทย์) — แก้เป็นชื่อเล่นและรูปของตัวเอง
 export const currentUser = {
-  nickname: "Cillian",
+  nickname: "Ming",
   role: "STUDENT" as "STUDENT" | "ADMIN",
-  avatar: "/profile.svg", // วางรูปไว้ที่ public/
+  avatar: "/ตัวเอง.jpg", // วางรูปไว้ที่ public/
 };

@@ -25,6 +25,9 @@ export default function RootLayout() {
         <main className="flex-1 p-4">
           <Outlet />
         </main>
+        <footer className="border-t border-neutral-200 dark:border-neutral-800 py-3 text-center text-xs text-neutral-500">
+          จัดทำโดย เตชิต ทั้งเจริญกุล รหัสนักศึกษา 670610354
+        </footer>
       </SidebarInset>
     </SidebarProvider>
   );
